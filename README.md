@@ -1,13 +1,15 @@
 # 🔮 Secret Word Challenge
 
-A small and fun Python program where the computer randomly chooses a secret word, and the user tries to guess it.
+A small and fun Python program where the computer randomly chooses a secret word, and the user tries to guess it within 3 attempts.
 
 ## ✨ Features
 
 * Randomly selects a secret word
-* Takes the user's guess
+* Gives the user 3 attempts to guess
+* Provides a hint after an incorrect guess
 * Checks whether the guess is correct
-* Displays the result
+* Removes extra spaces from user input
+* Displays the secret word if all attempts are used
 * Beginner-friendly Python project
 
 ## 🛠️ Requirements
@@ -27,13 +29,13 @@ git clone https://github.com/fadifadifadifadifadi157-glitch/Secret-Word-Generato
 2. Open the project folder:
 
 ```bash
-cd secret-word-challenge
+cd Secret-Word-Generator
 ```
 
 3. Run the Python file:
 
 ```bash
-main.py
+python main.py
 ```
 
 4. Enter your guess when prompted.
@@ -43,8 +45,13 @@ main.py
 ```text
 🔮 Secret Word Challenge
 I have chosen a secret word.
+💡 You have 3 attempts to guess it!
 
-Guess the word: python
+Attempt 1: hello
+❌ Wrong guess!
+💡 Hint: The word starts with p
+
+Attempt 2: python
 🎉 Correct! You found the secret word!
 ```
 
@@ -54,9 +61,12 @@ This project demonstrates:
 
 * Python lists
 * `random.choice()`
-* User input
+* `for` loops
 * `if/else` statements
-* String methods
+* User input
+* `.lower()`
+* `.strip()`
+* Basic game logic
 
 ## 👨‍💻 Author
 
